@@ -1,0 +1,28 @@
+{
+  "name": "neopet-image-finder",
+  "version": "1.0.0",
+  "description": "A Small Module for Finding Neopet Image Links",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragonfire535/neopet-image-finder.git"
+  },
+  "keywords": [
+    "neopet",
+    "neopets",
+    "sunnyneo"
+  ],
+  "author": "dragonfire535",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dragonfire535/neopet-image-finder/issues"
+  },
+  "homepage": "https://github.com/dragonfire535/neopet-image-finder#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "snekfetch": "^2.3.0"
+  }
+}
