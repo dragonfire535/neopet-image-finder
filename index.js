@@ -2,6 +2,7 @@ const snekfetch = require('snekfetch');
 const cheerio = require('cheerio');
 
 module.exports = (name, size, mood) => {
+    name = encodeURIComponent(name);
     size = size || 5;
     mood = mood || 1;
     return snekfetch
