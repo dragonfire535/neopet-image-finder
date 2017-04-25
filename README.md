@@ -1,6 +1,7 @@
 # neopet-image-finder
 [![Downloads](https://img.shields.io/npm/dt/neopet-image-finder.svg?maxAge=3600)](https://www.npmjs.com/package/discord.js-commando)
 [![Version](https://img.shields.io/npm/v/neopet-image-finder.svg?maxAge=3600)](https://www.npmjs.com/package/discord.js-commando)
+
 neopet-image-finder is a very simple module that obtains the pet image links for a Neopet with a given size and mood, searchable by name. It does this by scraping [Sunnyneo's Pet Image Finder](http://www.sunnyneo.com/petimagefinder.php). Usage is extremely simple:
 
 ```js
