@@ -23,17 +23,17 @@ petImage('Pikachu53535', 4, 2).then(link => {
 ```
 
 The sizes (first parameter) are:
-1: 50x50
-2: 150x150
-3: 80x80
-4: 300x300
-5: 500x500 (Default)
+1. 50x50
+2. 150x150
+3. 80x80
+4. 300x300
+5. 500x500 (Default)
 
 And the moods (second parameter):
-1: Happy (Default)
-2: Sad
-3: Angry
-4: Sick
-5: No Mouth or Eyes
+1. Happy (Default)
+2. Sad
+3. Angry
+4. Sick
+5. No Mouth or Eyes
 
 Both are entirely optional, and will simply default to `500x500` and `Happy` if not specified.
