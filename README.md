@@ -18,7 +18,7 @@ petImage('Pikachu53535').then(link => {
 There are also two optional parameters you can specify, `size` and `mood`.
 
 ```js
-petImage('Pikachu53535', 4, 2).then(link => {
+petImage('Pikachu53535', { size: 2, mood: 4 }).then(link => {
 	console.log(link);
 });
 ```
