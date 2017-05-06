@@ -15,7 +15,7 @@ petImage('Pikachu53535').then(link => {
 
 `http://pets.neopets.com/cp/rjwlsb8k/1/5.png` would be logged to the console. It returns a promise, so you can `await` it as well.
 
-There are also two optional parameters you can specify, `size` and `mood`.
+There are also two options you can specify, `size` and `mood`.
 
 ```js
 petImage('Pikachu53535', { size: 2, mood: 4 }).then(link => {
@@ -23,14 +23,14 @@ petImage('Pikachu53535', { size: 2, mood: 4 }).then(link => {
 });
 ```
 
-The sizes (first parameter) are:
+Sizes:
 1. 50x50
 2. 150x150
 3. 80x80
 4. 300x300
 5. 500x500 (Default)
 
-And the moods (second parameter):
+Moods:
 1. Happy (Default)
 2. Sad
 3. Angry
