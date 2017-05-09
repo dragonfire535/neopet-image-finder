@@ -1,7 +1,7 @@
 const request = require('superagent');
 const cheerio = require('cheerio');
 
-module.exports = (name, options = { size: 5, mood: 1 }) => {
+module.exports = (name, options = {}) => {
     if(!options.size) options.size = 5;
     if(!options.mood) options.mood = 1;
     return request
