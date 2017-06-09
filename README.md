@@ -1,6 +1,7 @@
 # neopet-image-finder
 [![Downloads](https://img.shields.io/npm/dt/neopet-image-finder.svg?maxAge=3600)](https://www.npmjs.com/package/neopet-image-finder)
 [![Version](https://img.shields.io/npm/v/neopet-image-finder.svg?maxAge=3600)](https://www.npmjs.com/package/neopet-image-finder)
+[![Codacy](https://api.codacy.com/project/badge/Grade/b8cedef7fd8c45e383019d9aa88faeb5)](https://www.codacy.com/app/dragonfire535/neopet-image-finder)
 [![Discord](https://discordapp.com/api/guilds/252317073814978561/embed.png)](https://discord.gg/fqQF8mc)
 
 neopet-image-finder is a very simple module that obtains the pet image links for a Neopet with a given size and mood, searchable by name. It does this by scraping [Sunnyneo's Pet Image Finder](http://www.sunnyneo.com/petimagefinder.php). Usage is extremely simple:
