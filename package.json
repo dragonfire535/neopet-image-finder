@@ -1,6 +1,6 @@
 {
   "name": "neopet-image-finder",
-  "version": "2.0.7",
+  "version": "3.0.0",
   "description": "A Small Module for Finding Neopet Image Links",
   "main": "index.js",
   "scripts": {
@@ -16,17 +16,26 @@
     "neopets",
     "sunnyneo"
   ],
-  "author": "dragonfire535",
+  "author": "dragonfire535 <danielbodendahl@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dragonfire535/neopet-image-finder/issues"
   },
   "homepage": "https://github.com/dragonfire535/neopet-image-finder#readme",
   "dependencies": {
-    "cheerio": "^0.22.0",
-    "snekfetch": "^3.1.7"
+    "snekfetch": "^3.2.4"
   },
   "devDependencies": {
-    "eslint": "^3.19.0"
+    "eslint": "^4.4.0",
+    "eslint-config-aqua": "^1.4.1"
+  },
+  "eslintConfig": {
+    "extends": "aqua",
+    "rules": {
+      "camelcase": "off",
+      "id-length": "off",
+      "no-await-in-loop": "off",
+      "no-console": "off"
+    }
   }
 }
