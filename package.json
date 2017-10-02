@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://github.com/dragonfire535/neopet-image-finder#readme",
 	"dependencies": {
-		"snekfetch": "^3.4.2"
+		"snekfetch": "^3.4.3"
 	},
 	"devDependencies": {
 		"eslint": "^4.8.0",
