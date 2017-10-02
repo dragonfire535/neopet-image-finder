@@ -1,41 +1,45 @@
 {
-  "name": "neopet-image-finder",
-  "version": "3.0.1",
-  "description": "A Small Module for Finding Neopet Image Links",
-  "main": "index.js",
-  "scripts": {
-    "test": "npm run lint",
-    "lint": "eslint ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dragonfire535/neopet-image-finder.git"
-  },
-  "keywords": [
-    "neopet",
-    "neopets",
-    "sunnyneo"
-  ],
-  "author": "dragonfire535 <danielbodendahl@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dragonfire535/neopet-image-finder/issues"
-  },
-  "homepage": "https://github.com/dragonfire535/neopet-image-finder#readme",
-  "dependencies": {
-    "snekfetch": "^3.2.4"
-  },
-  "devDependencies": {
-    "eslint": "^4.4.0",
-    "eslint-config-aqua": "^1.4.1"
-  },
-  "eslintConfig": {
-    "extends": "aqua",
-    "rules": {
-      "camelcase": "off",
-      "id-length": "off",
-      "no-await-in-loop": "off",
-      "no-console": "off"
-    }
-  }
+	"name": "neopet-image-finder",
+	"version": "3.0.2",
+	"description": "A Small Module for Finding Neopet Image Links",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run lint",
+		"lint": "eslint . --ext .js --ext .json"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dragonfire535/neopet-image-finder.git"
+	},
+	"keywords": [
+		"neopet",
+		"neopets",
+		"sunnyneo"
+	],
+	"author": "dragonfire535 <danielbodendahl@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dragonfire535/neopet-image-finder/issues"
+	},
+	"homepage": "https://github.com/dragonfire535/neopet-image-finder#readme",
+	"dependencies": {
+		"snekfetch": "^3.4.2"
+	},
+	"devDependencies": {
+		"eslint": "^4.8.0",
+		"eslint-config-aqua": "^2.0.1",
+		"eslint-plugin-json": "^1.2.0"
+	},
+	"eslintConfig": {
+		"extends": "aqua",
+		"plugins": [
+			"json"
+		],
+		"rules": {
+			"camelcase": "off",
+			"id-length": "off",
+			"no-await-in-loop": "off",
+			"no-console": "off"
+		}
+	}
 }

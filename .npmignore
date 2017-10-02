@@ -3,3 +3,4 @@ package-lock.json
 logs/
 *.log
 .gitignore
+.travis.yml
