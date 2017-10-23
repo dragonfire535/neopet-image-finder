@@ -8,11 +8,7 @@ module.exports = (name, { size = 5, mood = 1 } = {}) => {
 	if (mood < 1 || mood > 5) throw new RangeError('mood must be a number between 1 and 5.');
 	return snekfetch
 		.get('http://www.sunnyneo.com/petimagefinder.php')
-		.query({
-			name,
-			size,
-			mood
-		})
+		.query({ name, size, mood })
 		.then(({ text }) => {
 			const link = text.match(/http:\/\/pets\.neopets\.com\/cp\/.+\.png/);
 			if (!link) throw new Error('Invalid Neopet name.');
