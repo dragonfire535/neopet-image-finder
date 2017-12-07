@@ -33,11 +33,13 @@ petImage('Pikachu53535', { size: 2, mood: 4 }).then(link => console.log(link)).c
 ```
 
 Sizes:
-1. 50x50
+1. 50x50, Portrait
 2. 150x150
 3. 80x80
 4. 300x300
 5. 500x500 (Default)
+6. 150x150, Portrait
+7. 640x640
 
 Moods:
 1. Happy (Default)
