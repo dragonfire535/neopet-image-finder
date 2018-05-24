@@ -9,8 +9,8 @@ module.exports = (name, { size = 5, mood = 1 } = {}) => {
 	return snekfetch
 		.get('http://www.sunnyneo.com/petimagefinder.php')
 		.query({ name, size, mood })
-		.then(({ text }) => {
-			const link = text.match(/http:\/\/pets\.neopets\.com\/cp\/.+\.png/);
+		.then(({ raw }) => {
+			const link = raw.toString().match(/http:\/\/pets\.neopets\.com\/cp\/.+\.png/);
 			if (!link) throw new Error('Invalid Neopet name.');
 			return link[0];
 		});
