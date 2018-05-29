@@ -1,6 +1,6 @@
 {
 	"name": "neopet-image-finder",
-	"version": "3.0.9",
+	"version": "3.0.10",
 	"description": "A small module for finding Neopet image links.",
 	"main": "index.js",
 	"scripts": {
