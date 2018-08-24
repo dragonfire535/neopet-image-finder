@@ -15,11 +15,13 @@ petImage('Pikachu53535').then(link => console.log(link)).catch(console.error);
 ```
 
 `http://pets.neopets.com/cp/rjwlsb8k/1/5.png` would be logged to the console. It
-returns a promise, so you can `await` it as well.
+returns a promise, so you can `await` it as well. If the pet is not found, it
+returns null instead.
 
 ```js
 try {
 	const link = await petImage('Pikachu53535');
+	if (!link) return null;
 	console.log(link);
 } catch (err) {
 	console.error(err);

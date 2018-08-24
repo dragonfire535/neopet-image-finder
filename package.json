@@ -1,6 +1,6 @@
 {
 	"name": "neopet-image-finder",
-	"version": "3.0.11",
+	"version": "4.0.0",
 	"description": "A small module for finding Neopet image links.",
 	"main": "index.js",
 	"scripts": {
@@ -23,12 +23,12 @@
 	},
 	"homepage": "https://github.com/dragonfire535/neopet-image-finder#readme",
 	"dependencies": {
-		"node-superfetch": "^0.1.3"
+		"node-superfetch": "^0.1.4"
 	},
 	"devDependencies": {
-		"eslint": "^5.2.0",
-		"eslint-config-amber": "^1.0.3",
-		"eslint-plugin-json": "^1.2.0"
+		"eslint": "^5.4.0",
+		"eslint-config-amber": "^1.1.0",
+		"eslint-plugin-json": "^1.2.1"
 	},
 	"eslintConfig": {
 		"extends": "amber",

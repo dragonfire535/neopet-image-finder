@@ -9,7 +9,7 @@ module.exports = (name, { size = 5, mood = 1 } = {}) => {
 		.query({ name, size, mood })
 		.then(({ text }) => {
 			const link = text.match(/http:\/\/pets\.neopets\.com\/cp\/.+\.png/);
-			if (!link) throw new Error(`Could not find a Neopet with the name ${name}.`);
+			if (!link) return null;
 			return link[0];
 		});
 };
