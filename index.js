@@ -1,4 +1,5 @@
 const request = require('node-superfetch');
+const urlRegex = /https?:\/\/pets\.neopets\.com\/cp\/.+\.png/;
 
 module.exports = (name, { size = 5, mood = 1 } = {}) => {
 	if (typeof name !== 'string') throw new TypeError('name must be a string.');
@@ -8,7 +9,7 @@ module.exports = (name, { size = 5, mood = 1 } = {}) => {
 		.get('http://www.sunnyneo.com/petimagefinder.php')
 		.query({ name, size, mood })
 		.then(({ text }) => {
-			const link = text.match(/http:\/\/pets\.neopets\.com\/cp\/.+\.png/);
+			const link = text.match(urlRegex);
 			if (!link) return null;
 			return link[0];
 		});
