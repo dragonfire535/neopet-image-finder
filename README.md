@@ -9,7 +9,7 @@ a Neopet with a given size and mood, searchable by name. Usage is extremely simp
 ```js
 const petImage = require('neopet-image-finder');
 
-petImage('Pikachu53535').then(res => console.log(res)).catch(console.error);
+petImage('Pikachu53535').then(data => console.log(data)).catch(console.error);
 ```
 
 The response would be similar to this:
@@ -26,9 +26,9 @@ returns null instead.
 
 ```js
 try {
-	const { url } = await petImage('Pikachu53535');
-	if (!url) return null;
-	console.log(url);
+	const data = await petImage('Pikachu53535');
+	if (!data) return null;
+	console.log(data.url);
 } catch (err) {
 	console.error(err);
 }
@@ -37,7 +37,7 @@ try {
 There are also two options you can specify, `size` and `mood`.
 
 ```js
-petImage('Pikachu53535', { size: 2, mood: 4 }).then(res => console.log(res.url)).catch(console.error);
+petImage('Pikachu53535', { size: 2, mood: 4 }).then(data => console.log(data.url)).catch(console.error);
 ```
 
 Sizes:

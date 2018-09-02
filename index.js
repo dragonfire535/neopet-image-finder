@@ -7,5 +7,8 @@ module.exports = (name, { size = 5, mood = 1 } = {}) => {
 	return request
 		.get(`http://pets.neopets.com/cpn/${encodeURIComponent(name)}/${mood}/${size}.png`)
 		.then(res => ({ data: res.body, url: res.url }))
-		.catch(() => null);
+		.catch(err => {
+			if (err.status === 404) return null;
+			throw err;
+		});
 };
