@@ -4,25 +4,31 @@
 [![Travis](https://api.travis-ci.org/dragonfire535/neopet-image-finder.svg?branch=master)](https://travis-ci.org/dragonfire535/neopet-image-finder)
 
 neopet-image-finder is a very simple module that obtains the pet image links for
-a Neopet with a given size and mood, searchable by name. It does this by scraping
-[Sunnyneo's Pet Image Finder](http://www.sunnyneo.com/petimagefinder.php). Usage
-is extremely simple:
+a Neopet with a given size and mood, searchable by name. Usage is extremely simple:
 
 ```js
 const petImage = require('neopet-image-finder');
 
-petImage('Pikachu53535').then(link => console.log(link)).catch(console.error);
+petImage('Pikachu53535').then(res => console.log(res)).catch(console.error);
 ```
 
-`http://pets.neopets.com/cp/rjwlsb8k/1/5.png` would be logged to the console. It
-returns a promise, so you can `await` it as well. If the pet is not found, it
+The response would be similar to this:
+
+```js
+{
+	data: <Buffer>,
+	url: 'http://pets.neopets.com/cp/jd68fd89/1/5.png'
+}
+```
+
+It returns a promise, so you can `await` it as well. If the pet is not found, it
 returns null instead.
 
 ```js
 try {
-	const link = await petImage('Pikachu53535');
-	if (!link) return null;
-	console.log(link);
+	const { url } = await petImage('Pikachu53535');
+	if (!url) return null;
+	console.log(url);
 } catch (err) {
 	console.error(err);
 }
@@ -31,7 +37,7 @@ try {
 There are also two options you can specify, `size` and `mood`.
 
 ```js
-petImage('Pikachu53535', { size: 2, mood: 4 }).then(link => console.log(link)).catch(console.error);
+petImage('Pikachu53535', { size: 2, mood: 4 }).then(res => console.log(res.url)).catch(console.error);
 ```
 
 Sizes:
